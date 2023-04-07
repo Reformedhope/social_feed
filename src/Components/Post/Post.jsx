@@ -3,10 +3,10 @@ const Post = (props) => {
     return ( 
         <table>
         <thead>
-          <tr>Name</tr>
-            <th>
-              <tr>Status</tr>
-            </th>
+          <tr>name</tr>
+          
+              <tr>status</tr>
+            
         </thead>
          <tbody>
           {props.olderPosts.map((post, index) => {
