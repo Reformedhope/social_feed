@@ -20,6 +20,8 @@ const Post = (props) => {
               <button type = 'button'> Like</button>
               <button type = 'button'> Dislike</button> 
             </div>
+            <br>
+            </br>
         </div>
             );
           })}

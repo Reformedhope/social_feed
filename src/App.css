@@ -1,0 +1,25 @@
+
+.border-box {
+   
+    border: 1px;
+    border-style: solid;
+    border-color: purple;
+    border-width: 0.5em;
+    margin: 2em;
+    padding: 2em;
+    background-color: beige;
+    
+}
+
+.font{
+    font:bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font: black;
+
+}
+
+.heading{
+    text-align: center;
+    padding: 1rem;
+}

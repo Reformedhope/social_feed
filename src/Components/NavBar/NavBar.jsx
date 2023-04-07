@@ -1,9 +1,18 @@
 import './NavBar.css'
 
-<nav class="navbar navbar-default">
+const NavBar = (props) => {
+    return ( 
+        <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="#">Social Feed</a>
         </div>
     </div>
 </nav>
+     );
+}
+ 
+export default NavBar;
+
+
+
