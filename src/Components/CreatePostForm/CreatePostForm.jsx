@@ -7,13 +7,15 @@ const CreatePostForm = (props) => {
     const[status, setStatus] = useState('');
     
     function handleSubmit(event) {
-        event.preventDefault();      {/*s Thsi prevents the form from reloading everytime we click the submit button. */}
+        event.preventDefault();      {/*s This prevents the form from reloading everytime we click the submit button. */}
         let newPost = {
             name: name,
             status: status
             
         };
-           console.log(newPost); 
+           console.log(newPost);
+           props.createNewPostForm(newPost)
+          
     }
 
     

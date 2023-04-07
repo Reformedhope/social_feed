@@ -2,22 +2,28 @@
 const Post = (props) => {
     return ( 
         <table>
-        <thead>
-          <tr>name</tr>
-          
-              <tr>status</tr>
-            
-        </thead>
-         <tbody>
+    
+        <tbody>
           {props.olderPosts.map((post, index) => {
             return (
+        <div class = 'onePost'>
               <tr>
-                <td>{index}</td>
-                <td>{post.name}</td>
-                <td>{post.status}</td>
+                <br>
+                </br>
+                <td> {index + 1}</td>
+                <br>
+                </br>
+                <tr>name:    {post.name}</tr>
+                <tr>Post:    {post.status}</tr>
               </tr>
+            <div class ='buttons'>
+              <button type = 'button'> Like</button>
+              <button type = 'button'> Dislike</button> 
+            </div>
+        </div>
             );
           })}
+        
         </tbody> 
       </table>
     );
