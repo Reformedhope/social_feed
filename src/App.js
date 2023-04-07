@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
-import Post from './Components/Post/Post';
+import PostList from './Components/PostList/PostList';
 import NavBar from './Components/NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.css'; 
 import 'bootstrap/dist/js/bootstrap.js';
@@ -37,7 +37,7 @@ function App() {
       <div className='font'>
       <div className='border-box'>
         
-      <Post olderPosts={posts}/> {/*setting it to the function reference, like apointer or a name.  passing a pointer to this componant */}
+      <PostList olderPosts={posts}/> {/*setting it to the function reference, like apointer or a name.  passing a pointer to this componant */}
       </div>
       </div>
     </div>

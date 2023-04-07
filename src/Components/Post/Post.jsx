@@ -1,39 +1,35 @@
+import React, { useState } from 'react';
+
 
 const Post = (props) => {
-    return ( 
-        <table>
+    const [disLiked, setIsDisliked] = useState(false)
+    const[liked, setIsLiked] =  useState(false)
+
+    function changeIsDisliked(){
+        setIsDisliked(!disLiked)
+    }
+
+
+    function changeIsLiked(){
+        setIsLiked(!liked)
+    }
+
     
-        <tbody>
-          {props.olderPosts.map((post, index) => {
-            return (
+    return ( 
         <div class = 'onePost'>
-              <tr>
-                <br>
-                </br>
-                <td> {index + 1}</td>
-                <br>
-                </br>
-                <tr>name:    {post.name}</tr>
-                <tr>Post:    {post.status}</tr>
-              </tr>
+               
+                <p> {props.index + 1}</p>
+                <p>name:    {props.post.name}</p>
+                <p>Post:    {props.post.status}</p>
+              
             <div class ='buttons'>
-              <button type = 'button'> Like</button>
-              <button type = 'button'> Dislike</button> 
+              <button className={liked ? "button-isliked" : "button-unclicked"} onClick={(e)=> changeIsLiked()}> Like</button>
+              <button className={disLiked ? "button-disliked" : "button-unclicked"} onClick={(e)=> changeIsDisliked()}> Dislike</button> 
             </div>
-            <br>
-            </br>
+            <hr/>
+           
         </div>
-            );
-          })}
-        
-        </tbody> 
-      </table>
     );
 }
  
 export default Post;
-
-{/* <div class="panel panel-primary">
-  <div class="panel-heading">Panel Heading</div>
-  <div class="panel-body">Panel Content</div>
-</div>  */}

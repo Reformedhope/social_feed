@@ -4,10 +4,13 @@
     border: 1px;
     border-style: solid;
     border-color: purple;
+    border-radius: 20px;
     border-width: 0.5em;
     margin: 2em;
     padding: 2em;
     background-color: beige;
+    width: 50%;
+    margin:auto;
     
 }
 
@@ -22,4 +25,17 @@
 .heading{
     text-align: center;
     padding: 1rem;
+}
+
+.button-unclicked {
+    background-color: gray;
+    border-radius: 30px;
+}
+
+.button-isliked {
+    background-color: green;
+    border-radius: 30px;
+}
+.button-disliked {
+    background-color: red;
 }
