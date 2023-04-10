@@ -7,11 +7,13 @@ const Post = (props) => {
 
     function changeIsDisliked(){
         setIsDisliked(!disLiked)
+        setIsLiked(false)
     }
 
 
     function changeIsLiked(){
         setIsLiked(!liked)
+        setIsDisliked(false)
     }
 
     
